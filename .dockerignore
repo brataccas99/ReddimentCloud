@@ -1,0 +1,9 @@
+.git*
+*csv
+front-end/
+server/
+terraform/
+test/
+changelog
+package*
+README*
