@@ -1,11 +1,7 @@
 # Reddiment - Hate Speech Detection on Reddit
 
-![GitHub tag (with filter)](https://img.shields.io/github/v/tag/brataccas99/reddiment)
-![Scrutinizer code quality (GitHub/Bitbucket)](https://img.shields.io/scrutinizer/quality/g/aleRizzolo/reddiment/main)
-![workflow](https://github.com/brataccas99/sentiReddy/actions/workflows/ci.yml/badge.svg)<br>
 ![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
@@ -34,7 +30,7 @@ Reddiment utilizes a combination of technologies to achieve its goals:
 
 - **Svelte**: Svelte is employed for the creation of user-friendly web interfaces. It allows for the development of responsive and efficient web applications for users to interact with the analyzed data.
 
-- **Docker**: Docker is used to provide a standard environment that helps user to have a ready-to-go application.
+- **Azure**: Cloud features
 
 ## Contributing
 
