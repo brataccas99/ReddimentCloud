@@ -27,7 +27,7 @@
 		await new Promise((resolve) => setTimeout(resolve, 2000));
 		isLoading = false;
 		base64 = images.data.map((/** @type {{ image_base64: any; }} */ image) => image.image_base64);
-		columns = images.data.map((/** @type {{ column: any; }} */ image) => image.column);
+		columns = images.data.map((/** @type {{ chart_type: any; }} */ image) => image.chart_type);
 	});
 
 	/**

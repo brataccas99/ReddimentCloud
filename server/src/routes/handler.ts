@@ -42,7 +42,7 @@ export const getAllCollections = async (req: Request, res: Response) => {
 
 export const getBarChartImage = async (req: Request, res: Response) => {
   try {
-    const image = await BarChartImageModel.find({}).select({ image_base64: 1, _id: 0 })
+    const image = await BarChartImageModel.find({}).select({ chart_type: 1, image_base64: 1, _id: 0 })
 
     if (image === null) {
       return res.status(404).send({ success: false, statusCode: 404, message: "Collections not found" })
@@ -57,7 +57,7 @@ export const getBarChartImage = async (req: Request, res: Response) => {
 
 export const getBarGraphImage = async (req: Request, res: Response) => {
   try {
-    const image = await BarGraphImageModel.find({}).select({ image_base64: 1, _id: 0 })
+    const image = await BarGraphImageModel.find({}).select({ chart_type: 1, image_base64: 1, _id: 0 })
 
     if (image === null) {
       return res.status(404).send({ success: false, statusCode: 404, message: "Collections not found" })
@@ -72,7 +72,7 @@ export const getBarGraphImage = async (req: Request, res: Response) => {
 
 export const getHistogramImage = async (req: Request, res: Response) => {
   try {
-    const image = await HistogramImageModel.find({}).select({ image_base64: 1, _id: 0 })
+    const image = await HistogramImageModel.find({}).select({ chart_type: 1, image_base64: 1, _id: 0 })
 
     if (image === null) {
       return res.status(404).send({ success: false, statusCode: 404, message: "Collections not found" })
@@ -87,7 +87,7 @@ export const getHistogramImage = async (req: Request, res: Response) => {
 
 export const getScatterPlotImage = async (req: Request, res: Response) => {
   try {
-    const image = await ScatterPlotImageModel.find({}).select({ image_base64: 1, _id: 0 })
+    const image = await ScatterPlotImageModel.find({}).select({ chart_type: 1, image_base64: 1, _id: 0 })
 
     if (image === null) {
       return res.status(404).send({ success: false, statusCode: 404, message: "Collections not found" })
@@ -102,7 +102,7 @@ export const getScatterPlotImage = async (req: Request, res: Response) => {
 
 export const getWordCloudImage = async (req: Request, res: Response) => {
   try {
-    const image = await WordCloudImageModel.find({}).select({ image_base64: 1, column: 1, _id: 0 })
+    const image = await WordCloudImageModel.find({}).select({ chart_type: 1, image_base64: 1, column: 1, _id: 0 })
 
     if (image === null) {
       return res.status(404).send({ success: false, statusCode: 404, message: "Collections not found" })
